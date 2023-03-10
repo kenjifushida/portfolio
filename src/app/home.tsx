@@ -97,10 +97,14 @@ export default function Home({darkMode, setDarkMode}: props) {
         </div>
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
           <div className='basis-1/3 flex-1'>
-            <Image src={web1} className='rounded-lg object-cover' alt='project1'/>
+            <a href='https://www.placy.city/' target='_blank' rel='noopener noreferrer'>
+            <Image src={web1} className='rounded-lg object-cover' alt='Placy'/>
+            </a>
           </div>
           <div className='basis-1/3 flex-1'>
-            <Image src={web2} className='rounded-lg object-cover'  alt='project1'/>
+            <a href='https://studio-true.net/' target='_blank' rel='noopener noreferrer'>
+            <Image src={web2} className='rounded-lg object-cover'  alt='Studio TRUE'/>
+            </a>
           </div>
         </div>
       </section>
