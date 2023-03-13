@@ -4,7 +4,7 @@ import { Inter } from '@next/font/google'
 import { BsFillMoonStarsFill } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
-import me from '../../public/profile.jpeg';
+import me from '../../public/profile.jpg';
 import design from '../../public/design.png';
 import code from '../../public/code.png';
 import web1 from '../../public/web1.png';
@@ -53,7 +53,7 @@ export default function Home({darkMode, setDarkMode}: props) {
           </a>
         </div>
         <div className='relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden md:h-96 md:w-96'>
-          <Image src={me} fill className='object-cover' alt='figure'/>
+          <Image src={me} fill className='object-cover object-center' alt='figure'/>
         </div>
       </section>
       
