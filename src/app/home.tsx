@@ -1,7 +1,7 @@
 "use client";
 import React from 'react';
 import { Inter } from '@next/font/google'
-import { BsFillMoonStarsFill } from 'react-icons/bs';
+import { BsFillMoonStarsFill, BsWindowFullscreen } from 'react-icons/bs';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import Image from 'next/image';
 import me from '../../public/profile.jpg';
@@ -9,6 +9,8 @@ import design from '../../public/design.png';
 import code from '../../public/code.png';
 import web1 from '../../public/web1.png';
 import web2 from '../../public/web2.png';
+import web3 from '../../public/web3.png';
+import web4 from '../../public/web4.png';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -96,15 +98,54 @@ export default function Home({darkMode, setDarkMode}: props) {
           <h3 className='text-3xl py-1 dark:text-gray-200'>Portfolio</h3>
         </div>
         <div className='flex flex-col gap-10 py-10 lg:flex-row lg:flex-wrap'>
-          <div className='basis-1/3 flex-1'>
-            <a href='https://www.placy.city/' target='_blank' rel='noopener noreferrer'>
+          <div className='relative flex justify-center items-center basis-1/3 flex-1'>
             <Image src={web1} className='rounded-lg object-cover' alt='Placy'/>
-            </a>
+            <div className='absolute bg-gray-400 bg-opacity-20 w-full h-full 
+              flex justify-center items-center gap-7 opacity-0 hover:opacity-100 text-gray-700'
+            >
+              <a href='https://github.com/hideodaikoku/placy-home' target='_blank' rel='noopener noreferrer'>
+                <AiFillGithub className='w-12 h-12 hover:text-gray-800' />
+              </a>
+              <a href='https://www.placy.city/' target='_blank' rel='noopener noreferrer'>
+                <BsWindowFullscreen className='w-12 h-12 hover:text-gray-800' />
+              </a>
+            </div>
           </div>
-          <div className='basis-1/3 flex-1'>
-            <a href='https://studio-true.net/' target='_blank' rel='noopener noreferrer'>
+          <div className='relative flex justify-center items-center basis-1/3 flex-1'>
+            <Image src={web4} className='rounded-lg object-cover' alt='CNS-Guide'/>
+            <div className='absolute bg-gray-400 bg-opacity-20 w-full h-full 
+              flex justify-center items-center gap-7 opacity-0 hover:opacity-100 text-gray-700'
+            >
+              <a href='https://github.com/kenjifushida/vue-cns-guide' target='_blank' rel='noopener noreferrer'>
+                <AiFillGithub className='w-12 h-12 hover:text-gray-800' />
+              </a>
+              <a href='https://tender-franklin-edb394.netlify.app/' target='_blank' rel='noopener noreferrer'>
+                <BsWindowFullscreen className='w-12 h-12 hover:text-gray-800' />
+              </a>
+            </div>
+          </div>
+          <div className='relative flex justify-center items-center basis-1/3 flex-1'>
+            <Image src={web3} className='rounded-lg object-cover h-full'  alt='GPT-3'/>
+            <div className='absolute bg-gray-400 bg-opacity-20 w-full h-full 
+              flex justify-center items-center gap-7 opacity-0 hover:opacity-100 text-gray-400'
+            >
+              <a href='https://github.com/kenjifushida/gpt3' target='_blank' rel='noopener noreferrer'>
+                <AiFillGithub className='w-12 h-12 hover:text-gray-100' />
+              </a>
+            </div>
+          </div>
+          <div className='relative flex justify-center items-center basis-1/3 flex-1'>
             <Image src={web2} className='rounded-lg object-cover'  alt='Studio TRUE'/>
-            </a>
+            <div className='absolute bg-gray-400 bg-opacity-20 w-full h-full 
+              flex justify-center items-center gap-7 opacity-0 hover:opacity-100 text-gray-700'
+            >
+              <a href='https://github.com/kenjifushida/studio-true-site' target='_blank' rel='noopener noreferrer'>
+                <AiFillGithub className='w-12 h-12 hover:text-gray-800' />
+              </a>
+              <a href='https://studio-true.net/' target='_blank' rel='noopener noreferrer'>
+                <BsWindowFullscreen className='w-12 h-12 hover:text-gray-800' />
+              </a>
+            </div>
           </div>
         </div>
       </section>
